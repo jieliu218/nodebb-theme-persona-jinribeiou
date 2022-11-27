@@ -6,7 +6,6 @@
 </div>
 <div class="row">
 	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
-		v class="unread">
 	<div class="topic-list-header btn-toolbar">
 		<div class="pull-left">
 			<!-- IMPORT partials/buttons/newTopic.tpl -->
