@@ -4,7 +4,8 @@
 	{{widgets.header.html}}
 	{{{end}}}
 </div>
-<div class="recent">
+<div class="row">
+	<div class="<!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 	<div class="topic-list-header btn-toolbar">
 		<div class="pull-left">
 			<!-- IF canPost -->
@@ -48,4 +49,15 @@
 			<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->
 	</div>
+</div>
+	<div data-widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
+		{{{each widgets.sidebar}}}
+		{{widgets.sidebar.html}}
+		{{{end}}}
+	</div>
+</div>
+<div data-widget-area="footer">
+	{{{each widgets.footer}}}
+	{{widgets.footer.html}}
+	{{{end}}}
 </div>
